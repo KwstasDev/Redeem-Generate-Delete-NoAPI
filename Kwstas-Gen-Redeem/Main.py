@@ -134,6 +134,8 @@ class MainApp:
             usertodel = input("Please enter the user that you want to delete: ")
             ManageLicense.deletelicense(licensetodel)
         else:
-            print()
+            print("Invalid Option! Redirecting back..")
+            time.sleep(3)
+            MainApp.Main()
 
 MainApp.Main()
